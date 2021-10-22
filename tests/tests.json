@@ -1,0 +1,103 @@
+[
+    {
+        "schema": "loginSchema.json",
+        "data": {
+            "userlogin": "",
+            "pwd": ""
+        },
+        "errors": 2
+    },
+    {
+        "schema": "loginSchema.json",
+        "data": {
+            "userlogin": "andrew",
+            "pwd": ""
+        },
+        "errors": 1
+    },
+    {
+        "schema": "userSchema.json",
+        "data": {
+            "name": "Alessio",
+            "surname": "De Padova",
+            "age": 8,
+            "fiscalCode":"ZBBKYV48S29M002T",
+            "role": {
+                "id": 4,
+                "name": "As"
+            },
+            "account": {
+                "id": 0,
+                "email": "alessiodepadova",
+                "pwd": "LolloCatollo"
+            }
+        },
+        "errors": 4
+    },
+    {
+        "schema": "userSchema.json",
+        "data": {
+            "name": "",
+            "surname": "De Padova",
+            "age": 5,
+            "fiscalCode":"ZBBKYV48S29M002T",
+            "role": {
+                "id": 4,
+                "name": "Assistant"
+            },
+            "account": {
+                "id": 0,
+                "email": "alessiodepadova@gmail.com",
+                "pwd": "LolloCatollo"
+            }
+        },
+        "errors": 1
+    },
+    {
+        "schema": "userSchema.json",
+        "data": {
+            "name": "",
+            "surname": "De Padova",
+            "age": 5,
+            "fiscalCode":"ZBBKYV48S29M002T",
+            "role": {
+                "id": 4,
+                "name": "Assistant"
+            },
+            "account": {
+                "id": 0,
+                "email": "alessiodepadova@gmail.com",
+                "pwd": "LolloCatollo"
+            }
+        },
+        "errors": 1
+    },
+    {
+        "schema": "patientSchema.json",
+        "data": {
+            "name": "",
+            "surname": "De Padova",
+            "exemptionCode": 5,
+            "fiscalCode":"ZBBKYV48S29M002T",
+            "genre": {
+                "id": "M",
+                "name": "M"
+            }
+        },
+        "errors": 3
+    },
+    {
+        "schema": "patientSchema.json",
+        "data": {
+            "name": "Alessio",
+            "surname": "De Padova",
+            "exemptionCode": "depx",
+            "fiscalCode":"ZBBKYV48S29M002T",
+            "genre": {
+                "id": "M",
+                "name": "M"
+            }
+        },
+        "errors": 1
+    }
+]

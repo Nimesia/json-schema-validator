@@ -1,0 +1,16 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "title": "City",
+    "description": "City",
+    "type": "object",
+    "properties": {
+        "id": {
+            "description": "City Id",
+            "type": "number"
+        },
+        "name": {
+            "description": "City name",
+            "type": "string"
+        }
+    }
+}

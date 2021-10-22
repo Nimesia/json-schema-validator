@@ -1,0 +1,47 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "title": "User",
+    "description": "User",
+    "type": "object",
+    "required": ["name", "surname", "age", "role", "account"],
+    "properties": { 
+        "id": {
+            "description": "UserId",
+            "type": "string"
+        },
+        "name": {
+            "description": "User name",
+            "type": "string",
+            "minLength": 2
+        },
+        "surname": {
+            "description": "User surname",
+            "type": "string",
+            "minLength": 2
+        },
+        "age": {
+            "description": "User age",
+            "type": "number",
+            "oneOf": [
+                { "type": "number", "multipleOf": 5 },
+                { "type": "number", "multipleOf": 3 }
+              ]
+        },
+        "fiscalCode": {
+            "description": "fiscalCode",
+            "type": "string",
+            "minLength": 16,
+            "maxLength": 16
+        },
+        "enabled": {
+            "description": "Boolean value",
+            "type": "boolean"
+        },
+        "role": {
+            "$ref": "http://127.0.0.1:7575/tests/schema/roleSchema.json"
+        },
+        "account": {
+            "$ref": "http://127.0.0.1:7575/tests/schema/accountSchema.json"
+        }
+    }
+}

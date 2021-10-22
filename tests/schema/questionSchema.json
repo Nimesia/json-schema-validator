@@ -1,0 +1,14 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "title": "Question",
+    "type": "object",
+    "required": ["text"],
+    "properties": {
+    
+        "text": {
+            "description": "text",
+            "type": "string",
+            "minLength": 1
+        }
+    }
+}
