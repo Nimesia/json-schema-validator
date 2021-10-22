@@ -37,22 +37,24 @@ The main class is JSONSchemaValidator.cfc, inside the core folder.
 
 The followings are the public methods you can use:
 
-The function validate will return an array of structures containing infos, messages, types and details of the errors.
 
 * validate
+  The function validate will return an array of structures containing infos, messages, types and details of the errors.
+
   ```sh
   validate(required String json, required String schemaPath)
   ```
-  getAllErrors will return errors as a flat array
   
- * getAllErrors
+* getAllErrors
+  getAllErrors will return errors as a flat array
+
   ```sh
   getAllErrors(required String json, required String schemaPath)
   ```
-  
-   addError lets you add custom errors 
-  
- * addError
+   
+* addError
+ addError lets you add custom errors 
+
   ```sh
   addError(required String type, required String message, String pointer, Struct details) 
   ```
