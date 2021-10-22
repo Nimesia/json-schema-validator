@@ -45,14 +45,14 @@ The function validate will return an array of structures containing infos, messa
   ```
   getAllErrors will return errors as a flat array
   
-  * getAllErrors
+ * getAllErrors
   ```sh
   getAllErrors(required String json, required String schemaPath)
   ```
   
    addError lets you add custom errors 
   
-  * addError
+ * addError
   ```sh
   addError(required String type, required String message, String pointer, Struct details) 
   ```
