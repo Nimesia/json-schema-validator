@@ -39,21 +39,21 @@ The followings are the public methods you can use:
 
 
 * validate
-  The function validate will return an array of structures containing infos, messages, types and details of the errors.
+ return an array of structures containing infos, messages, types and details of the errors.
 
   ```sh
   validate(required String json, required String schemaPath)
   ```
   
 * getAllErrors
-  getAllErrors will return errors as a flat array
+  will return errors as a flat array
 
   ```sh
   getAllErrors(required String json, required String schemaPath)
   ```
    
 * addError
- addError lets you add custom errors 
+ lets you add custom errors 
 
   ```sh
   addError(required String type, required String message, String pointer, Struct details) 
