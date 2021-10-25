@@ -60,9 +60,11 @@ The followings are the public methods you can use:
   ```
 
 
-<!-- USAGE EXAMPLES -->
 ## Thanks to
+
 Alessio De Padova <alessio.de.padova95@gmail.com> for CF dev,Java dev and tests
+
 Chris Mair <chris@1006.org> for Java dev
+
 Roberto Marzialetti <roberto@marzialetti.com>
 
