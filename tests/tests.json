@@ -99,5 +99,13 @@
             }
         },
         "errors": 1
+    },
+    {
+        "schema": "loginSchema.json",
+        "data": {
+            "userlogin": "Alessio",
+            "pwd": "LolloCatollo"
+        },
+        "errors": 1
     }
 ]

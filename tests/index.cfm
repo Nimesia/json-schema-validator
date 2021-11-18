@@ -31,6 +31,7 @@
         <br>
         Expected errors: #test.errors#<br>
         errorDetails: #validateErrors#, allErrors: #allErrors#, <b style="color: #(matching ? 'green' : 'red')#">matching: #matching# </b>, <b style="color: #(matching ? 'green' : 'red')#">passed: #passed#</b><br>
+        details: #serializeJSON(errors)#
         <br>
         <hr style="border-bottom: 1px Black solid;">
         <br>

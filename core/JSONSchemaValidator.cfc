@@ -50,7 +50,6 @@ component accessors="true" {
 
         return errors;
 
-
     }
 
     public function addError(required String type, String message, String pointer, Struct details) {
@@ -158,14 +157,17 @@ component accessors="true" {
                 expected = stringList[1];
                 found = stringList[7];
                 break;
-
             case 'format': 
                 expected = 'Email format';
                 found = stringList[1]
                             .replace('[', '')
                             .replace(']', '');
                 break;
-
+            case 'pattern':
+                expected = listLast(message, ' ');
+                var firstPart =  listFirst(message, ']');
+                found =  listLast(firstPart, '[');
+                break;
             default:
                 expected = '';
                 found = '';
